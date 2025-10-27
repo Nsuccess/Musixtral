@@ -156,12 +156,10 @@ vercel --prod
 ---
 
 ## 💡 Future Improvements  
-
-- Real-time AI feedback during composition  
-- Collaborative multi-user DAW sessions  
-- Local language lyric support (Krio, Swahili, etc.)  
+ 
 - Integrated voice-based songwriting assistant
-
+- Package Open Door into a Camelac container
+- Expand features like voice cloning, sty transfer, and collaborations. 
 ---
 
 ## 📜 License  
