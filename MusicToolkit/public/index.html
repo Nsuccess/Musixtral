@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicToolkit MCP Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .status {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 MusicToolkit MCP Server</h1>
+        <p class="status">✅ Server Status: Running</p>
+        
+        <h2>Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <h3>MCP Protocol Endpoint</h3>
+            <p><strong>URL:</strong> <code>/mcp</code></p>
+            <p><strong>Method:</strong> POST</p>
+            <p><strong>Content-Type:</strong> application/json</p>
+            <p>Use this endpoint for MCP protocol communication</p>
+        </div>
+        
+        <div class="endpoint">
+            <h3>Server Info</h3>
+            <p><strong>URL:</strong> <code>/api/mcp</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Get server information and status</p>
+        </div>
+        
+        <h2>Available Tools</h2>
+        <ul>
+            <li><strong>wav_to_music_score</strong> - Convert WAV files to MusicXML scores</li>
+            <li><strong>generate_music_from_humming</strong> - Generate music from humming audio</li>
+        </ul>
+        
+        <h2>Example MCP Request</h2>
+        <pre><code>{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2024-11-05",
+    "capabilities": {},
+    "clientInfo": {"name": "test", "version": "1.0"}
+  }
+}</code></pre>
+        
+        <p><em>This is a public MCP server for music processing tools.</em></p>
+    </div>
+</body>
+</html>

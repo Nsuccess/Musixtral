@@ -1,0 +1,37 @@
+[project]
+name = "musictoolkit-mcp-server"
+version = "0.1.0"
+description = "MCP Server for music processing tools including WAV to MusicXML conversion and music generation from humming"
+authors = [
+    {name = "MusicToolkit", email = "info@musictoolkit.dev"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "fastmcp>=0.1.0",
+    "pydantic>=2.0.0",
+    "requests>=2.28.0",
+    "music21>=9.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 88

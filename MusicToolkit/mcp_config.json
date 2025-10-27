@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "musictoolkit-local": {
+      "command": "uv",
+      "args": ["run", "python", "music_toolkit_server.py"],
+      "cwd": "/Users/yongkangzou/Desktop/Hackathons/Youth Coders Hackathon/MusicToolkit",
+      "env": {}
+    },
+    "musictoolkit-vercel": {
+      "url": "https://musictoolkit.vercel.app/mcp",
+      "transport": "http"
+    }
+  }
+}

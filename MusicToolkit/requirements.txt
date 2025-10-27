@@ -1,0 +1,6 @@
+fastmcp>=0.1.0
+pydantic>=2.0.0
+requests>=2.28.0
+basic-pitch>=0.4.0
+music21>=9.1.0
+pathlib2>=2.3.7
